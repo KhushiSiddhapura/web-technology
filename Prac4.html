@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 4</title>
+</head>
+<body>
+    <h1 align="center">Online Job Application Form</h1>
+    <form action="get">
+        <table>
+            <tr>
+                <td><label for="name">FULL NAME:</label></td>
+                <td><input type="text" id="name" placeholder="Enter full name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">EMAIL ID:</label></td>
+                <td><input type="email" id="email" placeholder="example@gmail.com"></td>
+            </tr>
+            <tr>
+                <td><label for="number">MOBILE NUMBER:</label></td>
+                <td><input type="number" id="number" placeholder="10 digit number"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">DATE OF BIRTH:</label></td>
+                <td><input type="date" name="dob" id="dob"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">GENDER:</label></td>
+                <td><input type="radio" name="gender" id="male">Male <input type="radio" name="gender" id="female">Female <input type="radio" name="gender" id="other">Other</td>
+            </tr>
+            <tr>
+                <td><label for="add">ADDRESS:</label></td>
+                <td><textarea name="add" id="add" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="skills">SKILLS:</label></td>
+                <td><input type="checkbox" name="skills" id="html">HTML <input type="checkbox" name="skills" id="css">CSS <input type="checkbox" name="skills" id="js">JavaScript <input type="checkbox" name="skills" id="python">Python</td>
+            </tr>
+            <tr>
+                <td><label for="experience">EXPERIENCE LEVEL:</label></td>
+                <td><input type="range" name="experience" id="experience">(years)</td>
+            </tr>
+            <tr>
+                <td><label for="salery">EXPECTED SALERY:</label></td>
+                <td><input type="number" name="salery" id="salery"></td>
+            </tr>
+            <tr>
+                <td><label for="resume">UPLOAD RESUME:</label></td>
+                <td><input type="file" name="resume" id="resume"></td>
+            </tr>
+            <tr>
+                <td><label for="time">AVAILABLE TIME:</label></td>
+                <td><input type="time" name="time" id="time"></td>
+            </tr>
+            <tr>
+                <td><label for="role">JOB ROLE:</label></td>
+                <td><select name="role" id="role">
+                    <option value="select">Select Role</option>
+                    <option value="fm">Finance Manager</option>
+                    <option value="om">Operations Manager</option>
+                    <option value="pm">Project Manager</option>
+                    <option value="sd">Software Developer</option>
+                    <option value="it">IT Support Specialist</option>
+                    <option value="sr">Sales Representative</option>
+                    <option value="csm">Customer Success Manager</option>
+                    <option value="ea">Executive Assistant</option>
+                    <option value="om">Office Manager</option>
+                    <option value="mm">Marketing Manager</option>
+                    <option value="cc">Content Creator</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="education">EDUCATIONAL DETAILS:</label></td>
+                <td>
+                    <table border="1">
+                        <tr>
+                            <td><b>Degree</b></td>
+                            <td><b>Institute</b></td>
+                            <td><b>Year</b></td>
+                            <td><b>CGPA</b></td>
+                        </tr>
+                        <tr>
+                            <td>Bechelor</td>
+                            <td><input type="text" name="ins_b" id="ins_b"></td>
+                            <td><input type="number" name="year_b" id="year_b"></td>
+                            <td><input type="number" name="cgpa_b" id="cgpa_b"></td>
+                        </tr>
+                        <tr>
+                            <td>Master</td>
+                            <td><input type="text" name="ins_m" id="ins_m"></td>
+                            <td><input type="number" name="year_m" id="year_m"></td>
+                            <td><input type="number" name="cgpa_m" id="cgpa_m"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="status">APPLICATION STATUS:</label></td>
+                <td><progress id="status" value="70" max="100"></progress></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center"><button type="submit">Apply</button><button type="reset">Reset</button></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
