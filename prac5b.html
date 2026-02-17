@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practical 5 using HTML5</title>
+    <style>
+        body, html {
+             margin: 0; 
+             padding: 0;
+             height: 100%; 
+             overflow: hidden; 
+            }
+        .row-20 { 
+             height: 20%;
+              width: 100%; 
+            }
+        .row-70 {
+             height: 70%;
+             width: 100%;
+             display: flex; 
+            }
+        .row-10 {
+             height: 10%;
+             width: 100%; 
+            }
+        .col-25 { 
+             width: 25%;
+             height: 100%; 
+            }
+        .col-75 {
+             width: 75%; 
+             height: 100%; 
+            }
+    </style>
+</head>
+<body>
+    <div class="row-20">
+        <iframe scrolling="no" frameborder="0" src="header.html" height="100%" width="100%"></iframe>
+    </div>
+    <div class="row-70">
+        <div class="col-25">
+            <iframe scrolling="no" frameborder="0" src="leftmenu.html" height="100%" width="100%"></iframe>
+        </div>
+        <div class="col-75">
+            <iframe scrolling="no" frameborder="0" src="rightmenu.html" height="100%" width="100%"></iframe>
+        </div>
+    </div>
+    <div class="row-10">
+        <iframe scrolling="no" frameborder="0" src="footer.html" height="100%" width="100%"></iframe>
+    </div>
+</body>
+</html>
