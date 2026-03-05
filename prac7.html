@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practical 7</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        header{
+            text-align: center;
+        }
+        main h2{
+            text-align: center;
+        }
+        .box1{
+            box-sizing: border-box;
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            padding: 20px;
+            border: 5px solid black;
+        }
+        .box2{
+            box-sizing: content-box;
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            padding: 20px;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CSS part 1</h1>
+        </header>
+        <main>
+            <h2>Box model Example</h2>
+            <div class="box1">
+                <p>Border-box using.. <br>height: 200px <br>width: 200px <br>margin: 10px <br>border: 5px <br>Padding: 20px</p>
+            </div>
+            <div class="box2">
+                <p>Content Box using.. <br>height: 200px <br>width: 200px <br>margin: 10px <br>border: 5px <br>Padding: 20px</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
