@@ -1,54 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!doctype html>
+<html>
+  <head>
     <title>Practical 7</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            height: 100vh;
-            width: 100vw;
-        }
-        header{
-            text-align: center;
-        }
-        main h2{
-            text-align: center;
-        }
-        .box1{
-            box-sizing: border-box;
-            height: 200px;
-            width: 200px;
-            margin: 10px;
-            padding: 20px;
-            border: 5px solid black;
-        }
-        .box2{
-            box-sizing: content-box;
-            height: 200px;
-            width: 200px;
-            margin: 10px;
-            padding: 20px;
-            border: 5px solid black;
-        }
+      body {
+        font-family: serif;
+        background: #ddd;
+      }
+
+      h2 {
+        font-weight: normal;
+      }
+
+      .margin {
+        width: 400px;
+        padding: 25px;
+        background: #e6b57e;
+        position: relative;
+      }
+
+      .border {
+        padding: 20px;
+        background: #f6e7a6;
+        border: 2px solid black;
+        position: relative;
+      }
+
+      .padding {
+        padding: 25px;
+        background: #a9e3d3;
+        border: 2px dashed black;
+        position: relative;
+      }
+
+      .content {
+        background: #7fa2d6;
+        padding: 15px;
+        text-align: center;
+        width: 200px;
+        margin: auto;
+      }
+
+      .label {
+        position: absolute;
+        font-size: 14px;
+      }
+
+      .margin-label {
+        top: 5px;
+        left: 10px;
+      }
+
+      .border-label {
+        top: 5px;
+        left: 10px;
+      }
+
+      .padding-label {
+        top: 5px;
+        left: 10px;
+      }
     </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>CSS part 1</h1>
-        </header>
-        <main>
-            <h2>Box model Example</h2>
-            <div class="box1">
-                <p>Border-box using.. <br>height: 200px <br>width: 200px <br>margin: 10px <br>border: 5px <br>Padding: 20px</p>
-            </div>
-            <div class="box2">
-                <p>Content Box using.. <br>height: 200px <br>width: 200px <br>margin: 10px <br>border: 5px <br>Padding: 20px</p>
-            </div>
-        </main>
+  </head>
+  <body>
+    <div class="margin">
+      <span class="label margin-label">Margin</span>
+      <div class="border">
+        <span class="label border-label">Border</span>
+        <div class="padding">
+          <span class="label padding-label">Padding</span>
+          <div class="content">Content</div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
