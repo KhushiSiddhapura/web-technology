@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Practical 8</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      nav {
+        background: green;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+      }
+      ul li {
+        position: relative;
+      }
+      ul li a {
+        display: block;
+        padding: 15px 25px;
+        text-decoration: none;
+        color: white;
+      }
+      ul li a:hover {
+        background: darkgreen;
+      }
+      ul li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: lightgray;
+        flex-direction: column;
+        min-width: 150px;
+      }
+      ul li ul li a {
+        color: black;
+      }
+      ul li:hover > ul {
+        display: block;
+      }
+      ul li ul li a:hover {
+        background: darkgreen;
+        color: white;
+      }
+      ul li ul li ul {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        background: lightgray;
+        min-width: 120px;
+      }
+      ul li ul li:hover > ul {
+        display: block;
+      }
+      ul li ul li ul li a:hover {
+        background: green;
+        color: white;
+      }
+      .ec a:hover {
+        background: red;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Department ▾</a>
+          <ul>
+            <li><a href="#">BVM</a></li>
+            <li>
+              <a href="#">Engineering ▸</a>
+              <ul>
+                <li><a href="#">IT</a></li>
+                <li><a href="#">CE</a></li>
+                <li><a href="#">ME</a></li>
+                <li class="ec"><a href="#">EC</a></li>
+              </ul>
+            </li>
+            <li><a href="#">MBA</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
