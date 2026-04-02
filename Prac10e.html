@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practical 10 (E)</title>
+</head>
+<body>
+    <h1>Image size will change when mouse over the picture and come to original size when it comes out</h1>
+    <img src="Birla_Vishvakarma_Mahavidyalaya_logo-removebg-preview.png" height="170px" alt="BVM logo" id="img" onmouseenter="resize()" onmouseout="originalSize()">
+    <script>
+        let image = document.getElementById("img")
+        function resize(){
+            image.style.height = "200px"
+        }
+        function originalSize(){
+            image.style.height = "150px"
+        }
+    </script>
+</body>
+</html>
