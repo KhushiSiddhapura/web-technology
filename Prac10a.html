@@ -1,20 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Practical 10 (A)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px 15px;
+            border-width: 1px;
+            border-radius: 8px;
+        }
+
+        button {
+            margin: 5px 15px;
+            padding: 5px 10px;
+        }
+        p{
+            margin: 5px 15px;
+            font-size: 1.5vw;
+        }
+    </style>
 </head>
+
 <body>
-    <div>
-        <p>Sum: <span class="sum"></span></p>
-        <p>Multiplication: <span class="multiply"></span></p>
-    </div>
+    <input type="number" id="num1" placeholder="Enter first number" /> <br />
+    <input type="number" id="num2" placeholder="Enter second number" /> <br />
+    <button onclick="addNum()">Add</button>
+    <button onclick="multiplyNum()">Multiply</button> <br>
+    <p>Addition: <span id="resultAdd"></span></p>
+    <p>Multiplication: <span id="resultMul"></span></p>
     <script>
-        let x = parseInt(prompt("Enter first value: "))
-        let y = parseInt(prompt("Enter second value: "))
-        document.getElementsByClassName("sum")[0].innerHTML = x+y
-        document.getElementsByClassName("multiply")[0].innerHTML = x*y
+        function addNum() {
+            let x = Number(document.getElementById("num1").value)
+            let y = Number(document.getElementById("num2").value)
+                document.getElementById("resultAdd").innerHTML = x + y
+        }
+        function multiplyNum() {
+            let x = Number(document.getElementById("num1").value)
+            let y = Number(document.getElementById("num2").value)
+                document.getElementById("resultMul").innerHTML = x * y
+        }
     </script>
 </body>
 </html>
