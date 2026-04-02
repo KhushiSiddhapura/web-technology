@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Railway Reservation Form</title>
+    <style>
+      body {
+        font-family: Arial;
+      }
+      table {
+        margin: auto;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 8px;
+      }
+      input,
+      select {
+        padding: 5px;
+      }
+      button {
+        padding: 6px 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2 style="text-align: center;">Railway Reservation Form</h2>
+
+    <form onsubmit="return validateForm();">
+      <table style="border: 1px solid black;">
+        <tr>
+          <td>Name</td>
+          <td><input type="text" id="name" /></td>
+        </tr>
+
+        <tr>
+          <td>Age</td>
+          <td><input type="number" id="age" /></td>
+        </tr>
+
+        <tr>
+          <td>Gender</td>
+          <td>
+            <input type="radio" name="gender" value="Male" />Male
+            <input type="radio" name="gender" value="Female" />Female
+          </td>
+        </tr>
+
+        <tr>
+          <td>Source Station</td>
+          <td><input type="text" id="source" /></td>
+        </tr>
+
+        <tr>
+          <td>Destination Station</td>
+          <td><input type="text" id="destination" /></td>
+        </tr>
+
+        <tr>
+          <td>Journey Date</td>
+          <td><input type="date" id="date" /></td>
+        </tr>
+
+        <tr>
+          <td>Class</td>
+          <td>
+            <select id="class">
+              <option value="">Select Class</option>
+              <option>Sleeper</option>
+              <option>AC</option>
+              <option>First Class</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" style="text-align: center;">
+            <button type="submit">Reserve Ticket</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <script>
+      function validateForm() {
+        let name = document.getElementById("name").value;
+        let age = document.getElementById("age").value;
+        let source = document.getElementById("source").value;
+        let destination = document.getElementById("destination").value;
+        let date = document.getElementById("date").value;
+        let travelClass = document.getElementById("class").value;
+
+        if (name == "") {
+          alert("Please enter your name");
+          return false;
+        }
+
+        if (age == "") {
+          alert("Please enter your age");
+          return false;
+        }
+
+        if (source == "") {
+          alert("Please enter source station");
+          return false;
+        }
+
+        if (destination == "") {
+          alert("Please enter destination station");
+          return false;
+        }
+
+        if (date == "") {
+          alert("Please select journey date");
+          return false;
+        }
+
+        if (travelClass == "") {
+          alert("Please select class");
+          return false;
+        }
+
+        alert("Reservation Successful!");
+        return true;
+      }
+    </script>
+  </body>
+</html>
