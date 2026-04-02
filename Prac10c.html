@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practical 10 (C)</title>
+    <style>
+        td{
+            padding: 5px;
+        }
+        input{
+            padding: 5px;
+        }
+        button{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" name="dob" id="dob"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit" onclick="nullCheck()">Submit</button></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function nullCheck(){
+            let name = document.getElementById("name").value
+            let dob = document.getElementById("dob").value
+            if(name == null || name == ""){
+                alert("Please enter your name!");
+            }
+            if(dob == null || dob == ""){
+                alert("Please enter your birthdate!");
+            }
+        }
+    </script>
+</body>
+</html>
