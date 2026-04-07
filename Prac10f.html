@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Practical 10 (F)</title>
+
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial;
+      }
+
+      .container {
+        margin-top: 50px;
+      }
+
+      .color {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin: 10px;
+        border: 2px solid black;
+        cursor: pointer;
+      }
+
+      #red {
+        background: red;
+      }
+      #green {
+        background: green;
+      }
+      #blue {
+        background: blue;
+      }
+      #yellow {
+        background: yellow;
+      }
+      #orange {
+        background: orange;
+      }
+    </style>
+
+    <script>
+      function changeColor(colorName) {
+        document.body.style.backgroundColor = colorName;
+        window.status = "Color: " + colorName;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Mouse Over Color Blocks</h2>
+
+    <div class="container">
+      <div id="red" class="color" onmouseover="changeColor('red')"></div>
+      <div id="green" class="color" onmouseover="changeColor('green')"></div>
+      <div id="blue" class="color" onmouseover="changeColor('blue')"></div>
+      <div id="yellow" class="color" onmouseover="changeColor('yellow')"></div>
+      <div id="orange" class="color" onmouseover="changeColor('orange')"></div>
+    </div>
+  </body>
+</html>
