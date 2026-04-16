@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="student.xsl" type="text/xsl"?>
+<Student>
+    <id>25IT473</id>
+    <name>Khushi Siddhapura</name>
+    <marks>9.29</marks>
+</Student>
