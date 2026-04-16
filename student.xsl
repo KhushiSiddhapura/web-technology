@@ -4,19 +4,29 @@
         <html>
             <head>
                 <title>Practical 9</title>
+                <style>
+                    table,
+                    th,
+                    tr,
+                    td{
+                        border: 1px solid black;
+                        border-collapse: collapse;
+                        padding: 5px 15px;
+                    }
+                </style>
             </head>
             <body>
                 <h2>Student Details</h2>
-                <table style="border: 1px solid black;">
+                <table>
                     <tr>
                         <th>ID</th>
                         <th>Name</th>
                         <th>Marks</th>
                     </tr>
                     <tr>
-                        <td><xsl:value-of select="student/id"/></td>
-                        <td><xsl:value-of select="student/name"/></td>
-                        <td><xsl:value-of select="student/marks"/></td>
+                        <td><xsl:value-of select="Student/id"/></td>
+                        <td><xsl:value-of select="Student/name"/></td>
+                        <td><xsl:value-of select="Student/marks"/></td>
                     </tr>
                 </table>
             </body>
